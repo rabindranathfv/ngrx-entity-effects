@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "ngrx-entity-effects": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngrx-entity-effects"
+    }
+  },
+  "defaultProject": "ngrx-entity-effects",
+  "cli": {
+    "analytics": "545c75ac-4c67-47ff-a2ff-06d266d9eef1"
+  }
 }

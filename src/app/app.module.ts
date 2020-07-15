@@ -17,10 +17,14 @@ import { DataService } from './fakeApi/data.service';
 
 // services
 import { PolicyService } from './service/policy.service';
+import { PolicyListComponent } from './components/policy-list/policy-list.component';
+import { PolicyCreateComponent } from './components/policy-create/policy-create.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PolicyListComponent,
+    PolicyCreateComponent
   ],
   imports: [
     BrowserModule,

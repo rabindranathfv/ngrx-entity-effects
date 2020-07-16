@@ -19,6 +19,7 @@ import { DataService } from './fakeApi/data.service';
 import { PolicyService } from './service/policy.service';
 import { PolicyListComponent } from './components/policy-list/policy-list.component';
 import { PolicyCreateComponent } from './components/policy-create/policy-create.component';
+import { EntitiesEffects } from './store/effect/entities.effects';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { PolicyCreateComponent } from './components/policy-create/policy-create.
     InMemoryWebApiModule.forRoot(DataService),
     StoreModule.forRoot({}, {}),
     EffectsModule.forRoot([]),
-    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
+    EffectsModule.forFeature([EntitiesEffects])
   ],
   providers: [ DataService, PolicyService ],
   bootstrap: [AppComponent]

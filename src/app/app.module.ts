@@ -20,12 +20,14 @@ import { PolicyService } from './service/policy.service';
 import { PolicyListComponent } from './components/policy-list/policy-list.component';
 import { PolicyCreateComponent } from './components/policy-create/policy-create.component';
 import { EntitiesEffects } from './store/effect/entities.effects';
+import { EntityComponent } from './components/entity/entity.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PolicyListComponent,
-    PolicyCreateComponent
+    PolicyCreateComponent,
+    EntityComponent
   ],
   imports: [
     BrowserModule,
